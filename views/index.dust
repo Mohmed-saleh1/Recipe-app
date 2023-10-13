@@ -1,5 +1,9 @@
 {>"layout" /}
 
 {<body}
-    This is index
+    {#recipes}
+        <div class="well">
+            <h4>{name} <button class="btn btn-default pull-right"></button></h4>
+        </div>
+    {/recipes}
 {/body}
