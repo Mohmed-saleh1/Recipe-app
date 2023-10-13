@@ -18,13 +18,15 @@ app.set('views',__dirname+'/views')
 
 //set Public Folder 
 app.use(express.static(path.join(__dirname,'public')));
-
+ 
 // body parser middleware
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:false}));
 
 app.get('/',function (req,res) {
+    const name = {fn:"Mohamed"}
     console.log("Test");
+    res.render('index')
 })
 
 // server
